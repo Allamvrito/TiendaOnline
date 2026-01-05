@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "328650388720",
+    "project_id": "tiendaonline-71adf",
+    "storage_bucket": "tiendaonline-71adf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328650388720:android:657b4e842b63723b17be35",
+        "android_client_info": {
+          "package_name": "com.example.tiendaonline"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9OHiT6gUVBFLB7UJd2KYu7E2zca5Emd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
