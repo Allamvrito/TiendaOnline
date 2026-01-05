@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "descripcion": "Seed Firestore: e-commerce de electronica (free-tier-first)",
+  "version": "1.2",
+  "descripcion": "Seed Firestore: e-commerce de electronica (Restored DOCS structure with New Data)",
   "docs": [
     {
       "ruta": "configuracion/tienda",
@@ -19,26 +19,14 @@
       }
     },
     {
-      "ruta": "marcas/asus",
+      "ruta": "marcas/apple",
       "datos": {
-        "id_marca": "asus",
-        "nombre": "ASUS",
+        "id_marca": "apple",
+        "nombre": "Apple",
         "activo": true,
         "creado_en": {
           "__tipo__": "timestamp",
-          "valor": "2025-11-06T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "marcas/lenovo",
-      "datos": {
-        "id_marca": "lenovo",
-        "nombre": "Lenovo",
-        "activo": true,
-        "creado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-11-06T12:00:00Z"
+          "valor": "2025-01-01T00:00:00Z"
         }
       }
     },
@@ -50,7 +38,7 @@
         "activo": true,
         "creado_en": {
           "__tipo__": "timestamp",
-          "valor": "2025-11-06T12:00:00Z"
+          "valor": "2025-01-01T00:00:00Z"
         }
       }
     },
@@ -62,7 +50,19 @@
         "activo": true,
         "creado_en": {
           "__tipo__": "timestamp",
-          "valor": "2025-11-06T12:00:00Z"
+          "valor": "2025-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "ruta": "marcas/dell",
+      "datos": {
+        "id_marca": "dell",
+        "nombre": "Dell",
+        "activo": true,
+        "creado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2025-01-01T00:00:00Z"
         }
       }
     },
@@ -74,47 +74,18 @@
         "activo": true,
         "creado_en": {
           "__tipo__": "timestamp",
-          "valor": "2025-11-06T12:00:00Z"
+          "valor": "2025-01-01T00:00:00Z"
         }
       }
     },
     {
-      "ruta": "marcas/tplink",
+      "ruta": "categorias/smartphones",
       "datos": {
-        "id_marca": "tplink",
-        "nombre": "TP-Link",
-        "activo": true,
-        "creado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-11-06T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "marcas/wd",
-      "datos": {
-        "id_marca": "wd",
-        "nombre": "Western Digital",
-        "activo": true,
-        "creado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-11-06T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "categorias/celulares",
-      "datos": {
-        "id_categoria": "celulares",
-        "nombre": "Celulares",
-        "slug": "celulares",
-        "id_padre": null,
+        "id_categoria": "smartphones",
+        "nombre": "Smartphones",
+        "slug": "smartphones",
         "orden": 1,
-        "activa": true,
-        "creado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-09-07T12:00:00Z"
-        }
+        "activa": true
       }
     },
     {
@@ -123,13 +94,8 @@
         "id_categoria": "laptops",
         "nombre": "Laptops",
         "slug": "laptops",
-        "id_padre": null,
         "orden": 2,
-        "activa": true,
-        "creado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-09-07T12:00:00Z"
-        }
+        "activa": true
       }
     },
     {
@@ -138,1306 +104,318 @@
         "id_categoria": "audio",
         "nombre": "Audio",
         "slug": "audio",
-        "id_padre": null,
         "orden": 3,
-        "activa": true,
-        "creado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-09-07T12:00:00Z"
-        }
+        "activa": true
       }
     },
     {
-      "ruta": "categorias/almacenamiento",
+      "ruta": "categorias/perifericos",
       "datos": {
-        "id_categoria": "almacenamiento",
-        "nombre": "Almacenamiento",
-        "slug": "almacenamiento",
-        "id_padre": null,
+        "id_categoria": "perifericos",
+        "nombre": "Periféricos",
+        "slug": "perifericos",
         "orden": 4,
-        "activa": true,
-        "creado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-09-07T12:00:00Z"
-        }
+        "activa": true
       }
     },
     {
-      "ruta": "categorias/redes",
+      "ruta": "productos_publicos/iphone_15_pro",
       "datos": {
-        "id_categoria": "redes",
-        "nombre": "Redes",
-        "slug": "redes",
-        "id_padre": null,
-        "orden": 5,
-        "activa": true,
-        "creado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-09-07T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "categorias/accesorios",
-      "datos": {
-        "id_categoria": "accesorios",
-        "nombre": "Accesorios",
-        "slug": "accesorios",
-        "id_padre": null,
-        "orden": 6,
-        "activa": true,
-        "creado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-09-07T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "productos_publicos/prod_galaxy_a54",
-      "datos": {
-        "id_producto": "prod_galaxy_a54",
+        "id_producto": "iphone_15_pro",
         "estado": "activo",
-        "titulo": "Samsung Galaxy A54 5G 128GB",
-        "slug": "samsung-galaxy-a54-5g-128gb",
-        "descripcion_corta": "Pantalla Super AMOLED 6.4\", cámara 50MP, 5G.",
-        "descripcion": "Teléfono Android de gama media con excelente pantalla, buen rendimiento y cámara estabilizada.",
-        "marca_id": "samsung",
-        "marca_nombre": "Samsung",
+        "titulo": "iPhone 15 Pro 128GB",
+        "slug": "iphone-15-pro-128gb",
+        "descripcion_corta": "Titanio, Chip A17 Pro, Botón de Acción.",
+        "descripcion": "El primer iPhone con diseño de titanio de calidad aeroespacial. Chip A17 Pro para un rendimiento revolucionario.",
+        "marca_id": "apple",
+        "marca_nombre": "Apple",
         "categorias_ids": [
-          "celulares",
-          "accesorios"
+          "smartphones"
         ],
         "imagenes": [
           {
-            "url": "https://static.example/img/prod_galaxy_a54_1.webp",
-            "alt": "Frente",
+            "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium",
+            "alt": "iPhone 15 Pro Natural",
             "orden": 0
-          },
-          {
-            "url": "https://static.example/img/prod_galaxy_a54_2.webp",
-            "alt": "Parte trasera",
-            "orden": 1
           }
         ],
         "precio": {
           "moneda": "HNL",
-          "base": 10999.0,
-          "oferta": 9999.0,
-          "oferta_inicio": {
-            "__tipo__": "timestamp",
-            "valor": "2025-12-29T12:00:00Z"
-          },
-          "oferta_fin": {
-            "__tipo__": "timestamp",
-            "valor": "2026-01-12T12:00:00Z"
-          }
+          "base": 29999.0,
+          "oferta": 28999.0
         },
-        "tiene_variantes": true,
-        "variantes": [
-          {
-            "id_variante": "v_negro_128",
-            "sku": "SAMA54-128-BLK",
-            "titulo": "Negro / 128GB",
-            "opciones": {
-              "color": "Negro",
-              "almacenamiento": "128GB"
-            },
-            "precio_override": null,
-            "stock": 9,
-            "imagen": "https://static.example/img/prod_galaxy_a54_negro.webp"
-          },
-          {
-            "id_variante": "v_lila_128",
-            "sku": "SAMA54-128-LIL",
-            "titulo": "Lila / 128GB",
-            "opciones": {
-              "color": "Lila",
-              "almacenamiento": "128GB"
-            },
-            "precio_override": null,
-            "stock": 6,
-            "imagen": "https://static.example/img/prod_galaxy_a54_lila.webp"
-          }
-        ],
+        "tiene_variantes": false,
+        "variantes": [],
         "ficha_tecnica": {
-          "pantalla": "6.4\" Super AMOLED",
-          "resolucion": "1080x2340",
-          "procesador": "Exynos 1380",
-          "ram": "8GB",
-          "almacenamiento": "128GB",
-          "bateria": "5000mAh",
-          "redes": [
-            "4G",
-            "5G"
-          ],
-          "camara_trasera": "50MP (OIS) + 12MP + 5MP",
-          "camara_frontal": "32MP",
-          "sistema": "Android"
+          "pantalla": "6.1 Super Retina XDR",
+          "procesador": "A17 Pro",
+          "almacenamiento": "128GB"
         },
-        "especificaciones_extra": {
-          "imei_requerido": true,
-          "sim": "Dual SIM",
-          "carga": "25W"
-        },
+        "especificaciones_extra": {},
         "garantia": {
           "garantia_meses": 12,
-          "tipo": "fabricante",
-          "condiciones": "No cubre golpes, humedad o manipulación."
+          "tipo": "Apple Care",
+          "condiciones": "Defectos de fábrica"
         },
         "envio": {
           "requiere_envio": true,
-          "peso_gramos": 202,
-          "dimensiones_cm": {
-            "largo": 16.2,
-            "ancho": 7.7,
-            "alto": 0.82
-          },
+          "peso_gramos": 187,
           "bateria_litio": true
         },
         "calificaciones": {
           "promedio": 4.9,
-          "cantidad": 153
+          "cantidad": 50
         },
         "creado_en": {
           "__tipo__": "timestamp",
-          "valor": "2025-08-07T12:00:00Z"
+          "valor": "2026-01-01T10:00:00Z"
         },
         "actualizado_en": {
           "__tipo__": "timestamp",
-          "valor": "2025-12-27T12:00:00Z"
+          "valor": "2026-01-05T10:00:00Z"
         }
       }
     },
     {
-      "ruta": "productos_admin/prod_galaxy_a54",
+      "ruta": "productos_admin/iphone_15_pro",
       "datos": {
-        "id_producto": "prod_galaxy_a54",
-        "costo": 8568.93,
+        "id_producto": "iphone_15_pro",
+        "costo": 24500.0,
         "proveedor": {
-          "id_proveedor": "prov_techdist",
-          "nombre": "TechDistribuciones S.A."
+          "id_proveedor": "prov_001",
+          "nombre": "iShop Wholesale"
         },
-        "ubicacion_bodega": "B-2-6",
-        "notas_internas": "Controlar inventario semanalmente.",
+        "ubicacion_bodega": "A-12",
+        "notas_internas": "Stock bajo, reordenar pronto.",
         "actualizado_en": {
           "__tipo__": "timestamp",
-          "valor": "2025-12-24T12:00:00Z"
+          "valor": "2026-01-05T10:00:00Z"
         }
       }
     },
     {
-      "ruta": "productos_publicos/prod_lenovo_slim3",
+      "ruta": "productos_publicos/s24_ultra",
       "datos": {
-        "id_producto": "prod_lenovo_slim3",
+        "id_producto": "s24_ultra",
         "estado": "activo",
-        "titulo": "Laptop Lenovo IdeaPad Slim 3 15.6\" Ryzen 5 16GB 512GB SSD",
-        "slug": "laptop-lenovo-ideapad-slim-3-ryzen5-16gb-512ssd",
-        "descripcion_corta": "Ryzen 5, 16GB RAM, SSD 512GB, pantalla 15.6\" FHD.",
-        "descripcion": "Laptop para productividad, estudio y trabajo remoto. Ligera y rápida gracias al SSD.",
-        "marca_id": "lenovo",
-        "marca_nombre": "Lenovo",
+        "titulo": "Samsung Galaxy S24 Ultra",
+        "slug": "samsung-galaxy-s24-ultra",
+        "descripcion_corta": "AI Phone, Titanio, S-Pen incluido.",
+        "descripcion": "Galaxy S24 Ultra con Galaxy AI. Edición fotos profesional, traducción en vivo.",
+        "marca_id": "samsung",
+        "marca_nombre": "Samsung",
+        "categorias_ids": [
+          "smartphones"
+        ],
+        "imagenes": [
+          {
+            "url": "https://images.samsung.com/is/image/samsung/p6pim/latin/2401/gallery/latin-galaxy-s24-s928-sm-s928bztqgtgp-thumb-539299496",
+            "alt": "S24 Ultra Titanium Gray",
+            "orden": 0
+          }
+        ],
+        "precio": {
+          "moneda": "HNL",
+          "base": 32999.0
+        },
+        "tiene_variantes": false,
+        "variantes": [],
+        "ficha_tecnica": {
+          "pantalla": "6.8 QHD+",
+          "procesador": "Snapdragon 8 Gen 3",
+          "almacenamiento": "256GB"
+        },
+        "especificaciones_extra": {},
+        "garantia": {
+          "garantia_meses": 12,
+          "tipo": "Samsung",
+          "condiciones": "Defectos de fábrica"
+        },
+        "envio": {
+          "requiere_envio": true,
+          "peso_gramos": 232,
+          "bateria_litio": true
+        },
+        "calificaciones": {
+          "promedio": 4.8,
+          "cantidad": 30
+        },
+        "creado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2026-01-02T10:00:00Z"
+        },
+        "actualizado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2026-01-05T10:00:00Z"
+        }
+      }
+    },
+    {
+      "ruta": "productos_admin/s24_ultra",
+      "datos": {
+        "id_producto": "s24_ultra",
+        "costo": 26000.0,
+        "proveedor": {
+          "id_proveedor": "prov_002",
+          "nombre": "Samsung Latam"
+        },
+        "ubicacion_bodega": "A-13",
+        "notas_internas": "Promocionar Galaxy AI.",
+        "actualizado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2026-01-05T10:00:00Z"
+        }
+      }
+    },
+    {
+      "ruta": "productos_publicos/macbook_air_m2",
+      "datos": {
+        "id_producto": "macbook_air_m2",
+        "estado": "activo",
+        "titulo": "MacBook Air 13\" M2",
+        "slug": "macbook-air-13-m2",
+        "descripcion_corta": "Súper delgada. Súper rápida.",
+        "descripcion": "Rediseñada alrededor del chip M2 de próxima generación. Increíblemente delgada y con una duración de batería excepcional.",
+        "marca_id": "apple",
+        "marca_nombre": "Apple",
         "categorias_ids": [
           "laptops"
         ],
         "imagenes": [
           {
-            "url": "https://static.example/img/prod_lenovo_slim3_1.webp",
-            "alt": "Frente",
+            "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-midnight-select-20220606",
+            "alt": "MacBook Air Midnight",
             "orden": 0
-          },
-          {
-            "url": "https://static.example/img/prod_lenovo_slim3_2.webp",
-            "alt": "Teclado",
-            "orden": 1
           }
         ],
         "precio": {
           "moneda": "HNL",
-          "base": 19999.0,
-          "oferta": 18999.0,
-          "oferta_inicio": {
-            "__tipo__": "timestamp",
-            "valor": "2026-01-02T12:00:00Z"
-          },
-          "oferta_fin": {
-            "__tipo__": "timestamp",
-            "valor": "2026-01-15T12:00:00Z"
-          }
+          "base": 24999.0
         },
         "tiene_variantes": false,
         "variantes": [],
         "ficha_tecnica": {
-          "procesador": "AMD Ryzen 5",
-          "ram": "16GB",
-          "almacenamiento": "512GB SSD",
-          "pantalla": "15.6\"",
-          "resolucion": "Full HD",
-          "grafica": "Integrada",
-          "puertos": [
-            "USB-C",
-            "USB-A",
-            "HDMI",
-            "Jack 3.5mm"
-          ],
-          "conectividad": [
-            "Wi‑Fi",
-            "Bluetooth"
-          ],
-          "bateria": "Hasta 8h"
+          "pantalla": "13.6 Liquid Retina",
+          "procesador": "M2",
+          "ram": "8GB",
+          "ssd": "256GB"
         },
         "especificaciones_extra": {},
         "garantia": {
           "garantia_meses": 12,
-          "tipo": "tienda",
-          "condiciones": "Garantía por fallas de fábrica. No cubre golpes o líquidos."
+          "tipo": "Apple",
+          "condiciones": "Global Warranty"
         },
         "envio": {
           "requiere_envio": true,
-          "peso_gramos": 1750,
-          "dimensiones_cm": {
-            "largo": 36.0,
-            "ancho": 24.0,
-            "alto": 2.0
-          },
+          "peso_gramos": 1240,
           "bateria_litio": true
         },
         "calificaciones": {
-          "promedio": 4.5,
-          "cantidad": 125
+          "promedio": 4.9,
+          "cantidad": 85
         },
         "creado_en": {
           "__tipo__": "timestamp",
-          "valor": "2025-08-09T12:00:00Z"
+          "valor": "2026-01-03T10:00:00Z"
         },
         "actualizado_en": {
           "__tipo__": "timestamp",
-          "valor": "2025-12-27T12:00:00Z"
+          "valor": "2026-01-05T10:00:00Z"
         }
       }
     },
     {
-      "ruta": "productos_admin/prod_lenovo_slim3",
+      "ruta": "productos_admin/macbook_air_m2",
       "datos": {
-        "id_producto": "prod_lenovo_slim3",
-        "costo": 14602.63,
+        "id_producto": "macbook_air_m2",
+        "costo": 19500.0,
         "proveedor": {
-          "id_proveedor": "prov_techdist",
-          "nombre": "TechDistribuciones S.A."
+          "id_proveedor": "prov_001",
+          "nombre": "iShop Wholesale"
         },
-        "ubicacion_bodega": "B-3-2",
-        "notas_internas": "Controlar inventario semanalmente.",
+        "ubicacion_bodega": "B-05",
+        "notas_internas": "Best seller.",
         "actualizado_en": {
           "__tipo__": "timestamp",
-          "valor": "2026-01-02T12:00:00Z"
+          "valor": "2026-01-05T10:00:00Z"
         }
       }
     },
     {
-      "ruta": "productos_publicos/prod_sony_xm5",
+      "ruta": "productos_publicos/sony_xm5",
       "datos": {
-        "id_producto": "prod_sony_xm5",
+        "id_producto": "sony_xm5",
         "estado": "activo",
-        "titulo": "Audífonos Sony WH-1000XM5 Cancelación de Ruido",
-        "slug": "audifonos-sony-wh-1000xm5",
-        "descripcion_corta": "Audio premium con ANC, multipunto y gran batería.",
-        "descripcion": "Audífonos over-ear con cancelación de ruido líder y sonido detallado.",
+        "titulo": "Sony WH-1000XM5",
+        "slug": "sony-wh-1000xm5-headphones",
+        "descripcion_corta": "Cancelación de ruido líder en la industria.",
+        "descripcion": "Los auriculares WH-1000XM5 reescriben las reglas para escuchar sin distracciones.",
         "marca_id": "sony",
         "marca_nombre": "Sony",
         "categorias_ids": [
           "audio",
-          "accesorios"
+          "perifericos"
         ],
         "imagenes": [
           {
-            "url": "https://static.example/img/prod_sony_xm5_1.webp",
-            "alt": "Audífonos",
+            "url": "https://www.sony.hn/image/6145c1d32e6ac8e63a46c912dc33c5bb?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF",
+            "alt": "Sony XM5 Black",
             "orden": 0
-          },
-          {
-            "url": "https://static.example/img/prod_sony_xm5_2.webp",
-            "alt": "Estuche",
-            "orden": 1
           }
         ],
         "precio": {
           "moneda": "HNL",
-          "base": 9999.0,
-          "oferta": 9499.0,
-          "oferta_inicio": {
-            "__tipo__": "timestamp",
-            "valor": "2026-01-04T12:00:00Z"
-          },
-          "oferta_fin": {
-            "__tipo__": "timestamp",
-            "valor": "2026-01-19T12:00:00Z"
-          }
+          "base": 9500.0,
+          "oferta": 8900.0
         },
-        "tiene_variantes": true,
-        "variantes": [
-          {
-            "id_variante": "v_negro",
-            "sku": "SONY-XM5-BLK",
-            "titulo": "Negro",
-            "opciones": {
-              "color": "Negro"
-            },
-            "precio_override": null,
-            "stock": 7,
-            "imagen": "https://static.example/img/prod_sony_xm5_negro.webp"
-          },
-          {
-            "id_variante": "v_plata",
-            "sku": "SONY-XM5-SLV",
-            "titulo": "Plata",
-            "opciones": {
-              "color": "Plata"
-            },
-            "precio_override": null,
-            "stock": 4,
-            "imagen": "https://static.example/img/prod_sony_xm5_plata.webp"
-          }
-        ],
+        "tiene_variantes": false,
+        "variantes": [],
         "ficha_tecnica": {
-          "tipo": "Over-ear",
-          "cancelacion_ruido": "Sí (ANC)",
-          "conectividad": [
-            "Bluetooth"
-          ],
-          "codecs": [
-            "SBC",
-            "AAC",
-            "LDAC"
-          ],
-          "bateria": "Hasta 30h",
-          "carga": "USB-C",
-          "microfonos": "Integrados para llamadas"
+          "tipo": "Over-Ear",
+          "anc": "Sí",
+          "bateria": "30 horas"
         },
         "especificaciones_extra": {},
         "garantia": {
-          "garantia_meses": 12,
-          "tipo": "fabricante",
-          "condiciones": "No cubre mal uso o humedad."
+          "garantia_meses": 6,
+          "tipo": "Tienda",
+          "condiciones": ""
         },
         "envio": {
           "requiere_envio": true,
           "peso_gramos": 250,
-          "dimensiones_cm": {
-            "largo": 20,
-            "ancho": 17,
-            "alto": 8
-          },
           "bateria_litio": true
         },
         "calificaciones": {
-          "promedio": 4.6,
-          "cantidad": 84
+          "promedio": 4.7,
+          "cantidad": 120
         },
         "creado_en": {
           "__tipo__": "timestamp",
-          "valor": "2025-08-29T12:00:00Z"
-        },
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2026-01-05T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "productos_admin/prod_sony_xm5",
-      "datos": {
-        "id_producto": "prod_sony_xm5",
-        "costo": 7259.69,
-        "proveedor": {
-          "id_proveedor": "prov_techdist",
-          "nombre": "TechDistribuciones S.A."
-        },
-        "ubicacion_bodega": "B-1-19",
-        "notas_internas": "Controlar inventario semanalmente.",
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-12-25T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "productos_publicos/prod_wd_sn570_1tb",
-      "datos": {
-        "id_producto": "prod_wd_sn570_1tb",
-        "estado": "activo",
-        "titulo": "SSD NVMe Western Digital Blue SN570 1TB",
-        "slug": "ssd-nvme-wd-blue-sn570-1tb",
-        "descripcion_corta": "M.2 NVMe 1TB, alto rendimiento para PC y laptop.",
-        "descripcion": "Unidad sólida NVMe para acelerar cargas y transferencias, ideal para upgrades.",
-        "marca_id": "wd",
-        "marca_nombre": "Western Digital",
-        "categorias_ids": [
-          "almacenamiento",
-          "accesorios"
-        ],
-        "imagenes": [
-          {
-            "url": "https://static.example/img/prod_wd_sn570_1.webp",
-            "alt": "SSD",
-            "orden": 0
-          }
-        ],
-        "precio": {
-          "moneda": "HNL",
-          "base": 2199.0,
-          "oferta": 1999.0,
-          "oferta_inicio": {
-            "__tipo__": "timestamp",
-            "valor": "2025-12-31T12:00:00Z"
-          },
-          "oferta_fin": {
-            "__tipo__": "timestamp",
-            "valor": "2026-01-25T12:00:00Z"
-          }
-        },
-        "tiene_variantes": false,
-        "variantes": [],
-        "ficha_tecnica": {
-          "formato": "M.2 2280",
-          "interfaz": "NVMe PCIe",
-          "capacidad": "1TB",
-          "lectura": "Hasta 3500 MB/s",
-          "escritura": "Hasta 3000 MB/s"
-        },
-        "especificaciones_extra": {},
-        "garantia": {
-          "garantia_meses": 24,
-          "tipo": "tienda",
-          "condiciones": "Garantía por defectos de fábrica."
-        },
-        "envio": {
-          "requiere_envio": true,
-          "peso_gramos": 10,
-          "dimensiones_cm": {
-            "largo": 8,
-            "ancho": 2.2,
-            "alto": 0.2
-          },
-          "bateria_litio": false
-        },
-        "calificaciones": {
-          "promedio": 4.5,
-          "cantidad": 65
-        },
-        "creado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-07-01T12:00:00Z"
-        },
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2026-01-04T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "productos_admin/prod_wd_sn570_1tb",
-      "datos": {
-        "id_producto": "prod_wd_sn570_1tb",
-        "costo": 1786.34,
-        "proveedor": {
-          "id_proveedor": "prov_techdist",
-          "nombre": "TechDistribuciones S.A."
-        },
-        "ubicacion_bodega": "B-2-16",
-        "notas_internas": "Controlar inventario semanalmente.",
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-12-28T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "productos_publicos/prod_tplink_ax55",
-      "datos": {
-        "id_producto": "prod_tplink_ax55",
-        "estado": "activo",
-        "titulo": "Router TP-Link Archer AX55 Wi‑Fi 6",
-        "slug": "router-tp-link-archer-ax55-wifi-6",
-        "descripcion_corta": "Wi‑Fi 6, doble banda, mejor cobertura y estabilidad.",
-        "descripcion": "Router para hogar/oficina con Wi‑Fi 6 y funciones de seguridad.",
-        "marca_id": "tplink",
-        "marca_nombre": "TP-Link",
-        "categorias_ids": [
-          "redes"
-        ],
-        "imagenes": [
-          {
-            "url": "https://static.example/img/prod_tplink_ax55_1.webp",
-            "alt": "Router",
-            "orden": 0
-          }
-        ],
-        "precio": {
-          "moneda": "HNL",
-          "base": 2599.0,
-          "oferta": 2399.0,
-          "oferta_inicio": {
-            "__tipo__": "timestamp",
-            "valor": "2026-01-03T12:00:00Z"
-          },
-          "oferta_fin": {
-            "__tipo__": "timestamp",
-            "valor": "2026-01-17T12:00:00Z"
-          }
-        },
-        "tiene_variantes": false,
-        "variantes": [],
-        "ficha_tecnica": {
-          "estandar": "Wi‑Fi 6 (802.11ax)",
-          "bandas": [
-            "2.4GHz",
-            "5GHz"
-          ],
-          "puertos": [
-            "WAN 1Gbps",
-            "LAN 1Gbps x4"
-          ],
-          "seguridad": "WPA3",
-          "cobertura": "Hogar mediano"
-        },
-        "especificaciones_extra": {},
-        "garantia": {
-          "garantia_meses": 12,
-          "tipo": "fabricante",
-          "condiciones": "No cubre daños físicos o uso indebido."
-        },
-        "envio": {
-          "requiere_envio": true,
-          "peso_gramos": 500,
-          "dimensiones_cm": {
-            "largo": 26,
-            "ancho": 16,
-            "alto": 4
-          },
-          "bateria_litio": false
-        },
-        "calificaciones": {
-          "promedio": 4.4,
-          "cantidad": 61
-        },
-        "creado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-12-09T12:00:00Z"
-        },
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2026-01-01T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "productos_admin/prod_tplink_ax55",
-      "datos": {
-        "id_producto": "prod_tplink_ax55",
-        "costo": 1951.17,
-        "proveedor": {
-          "id_proveedor": "prov_techdist",
-          "nombre": "TechDistribuciones S.A."
-        },
-        "ubicacion_bodega": "B-5-11",
-        "notas_internas": "Controlar inventario semanalmente.",
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-12-29T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "productos_publicos/prod_logitech_mx3s",
-      "datos": {
-        "id_producto": "prod_logitech_mx3s",
-        "estado": "activo",
-        "titulo": "Mouse Logitech MX Master 3S Inalámbrico",
-        "slug": "mouse-logitech-mx-master-3s",
-        "descripcion_corta": "Ergonómico, silencioso, multipunto y precisión mejorada.",
-        "descripcion": "Mouse premium para productividad con rueda MagSpeed y sensores de alta precisión.",
-        "marca_id": "logitech",
-        "marca_nombre": "Logitech",
-        "categorias_ids": [
-          "accesorios"
-        ],
-        "imagenes": [
-          {
-            "url": "https://static.example/img/prod_logitech_mx3s_1.webp",
-            "alt": "Mouse",
-            "orden": 0
-          }
-        ],
-        "precio": {
-          "moneda": "HNL",
-          "base": 3199.0,
-          "oferta": 2999.0,
-          "oferta_inicio": {
-            "__tipo__": "timestamp",
-            "valor": "2026-01-04T12:00:00Z"
-          },
-          "oferta_fin": {
-            "__tipo__": "timestamp",
-            "valor": "2026-01-20T12:00:00Z"
-          }
-        },
-        "tiene_variantes": true,
-        "variantes": [
-          {
-            "id_variante": "v_grafito",
-            "sku": "LOGI-MX3S-GRF",
-            "titulo": "Grafito",
-            "opciones": {
-              "color": "Grafito"
-            },
-            "precio_override": null,
-            "stock": 11,
-            "imagen": "https://static.example/img/prod_logitech_mx3s_grafito.webp"
-          },
-          {
-            "id_variante": "v_gris",
-            "sku": "LOGI-MX3S-GRY",
-            "titulo": "Gris",
-            "opciones": {
-              "color": "Gris"
-            },
-            "precio_override": null,
-            "stock": 5,
-            "imagen": "https://static.example/img/prod_logitech_mx3s_gris.webp"
-          }
-        ],
-        "ficha_tecnica": {
-          "conectividad": [
-            "Bluetooth",
-            "Receptor USB"
-          ],
-          "bateria": "Recargable USB-C",
-          "compatibilidad": [
-            "Windows",
-            "macOS",
-            "Linux"
-          ],
-          "dpi": "Hasta 8000",
-          "botones": "Personalizables"
-        },
-        "especificaciones_extra": {},
-        "garantia": {
-          "garantia_meses": 12,
-          "tipo": "tienda",
-          "condiciones": "Garantía por defectos de fábrica."
-        },
-        "envio": {
-          "requiere_envio": true,
-          "peso_gramos": 141,
-          "dimensiones_cm": {
-            "largo": 12.5,
-            "ancho": 8.4,
-            "alto": 5.1
-          },
-          "bateria_litio": true
-        },
-        "calificaciones": {
-          "promedio": 4.4,
-          "cantidad": 168
-        },
-        "creado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-07-08T12:00:00Z"
-        },
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2026-01-05T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "productos_admin/prod_logitech_mx3s",
-      "datos": {
-        "id_producto": "prod_logitech_mx3s",
-        "costo": 2568.91,
-        "proveedor": {
-          "id_proveedor": "prov_techdist",
-          "nombre": "TechDistribuciones S.A."
-        },
-        "ubicacion_bodega": "B-4-16",
-        "notas_internas": "Controlar inventario semanalmente.",
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-12-30T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "metodos_envio/estandar",
-      "datos": {
-        "id_metodo": "estandar",
-        "nombre": "Envio estandar",
-        "activo": true,
-        "precio_base": 150.0,
-        "envio_gratis_desde": 1500.0,
-        "peso_max_gramos": 30000,
-        "eta_dias": {
-          "min": 2,
-          "max": 4
-        },
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-12-06T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "metodos_envio/express",
-      "datos": {
-        "id_metodo": "express",
-        "nombre": "Envio express",
-        "activo": true,
-        "precio_base": 250.0,
-        "envio_gratis_desde": 3000.0,
-        "peso_max_gramos": 20000,
-        "eta_dias": {
-          "min": 1,
-          "max": 2
-        },
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-12-06T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "cupones/WELCOME10",
-      "datos": {
-        "id_cupon": "WELCOME10",
-        "codigo": "WELCOME10",
-        "estado": "activo",
-        "tipo_descuento": "porcentaje",
-        "valor_descuento": 10,
-        "minimo_subtotal": 200.0,
-        "inicio": {
-          "__tipo__": "timestamp",
-          "valor": "2025-10-07T12:00:00Z"
-        },
-        "fin": {
-          "__tipo__": "timestamp",
-          "valor": "2026-04-05T12:00:00Z"
-        },
-        "uso": {
-          "limite_total": 1000,
-          "limite_por_usuario": 1,
-          "usados": 240
-        },
-        "creado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-10-07T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "usuarios/uid_demo_001",
-      "datos": {
-        "uid": "uid_demo_001",
-        "correo": "cliente_demo@correo.example",
-        "nombre": "Juan Perez",
-        "telefono": "+50499990000",
-        "rol": "cliente",
-        "estado": "activo",
-        "creado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-11-26T12:00:00Z"
-        },
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2026-01-04T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "usuarios/uid_demo_001/direcciones/dir_casa",
-      "datos": {
-        "etiqueta": "Casa",
-        "nombre_completo": "Juan Perez",
-        "telefono": "+50499990000",
-        "departamento": "Francisco Morazan",
-        "ciudad": "Tegucigalpa",
-        "colonia": "Colonia Centro",
-        "linea1": "Calle Principal, Casa 123",
-        "linea2": "",
-        "referencias": "Frente a la pulperia",
-        "es_predeterminada": true,
-        "creado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2025-11-27T12:00:00Z"
-        }
-      }
-    },
-    {
-      "ruta": "carritos/uid_demo_001",
-      "datos": {
-        "uid": "uid_demo_001",
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2026-01-05T06:00:00Z"
-        },
-        "items": [
-          {
-            "id_producto": "prod_wd_sn570_1tb",
-            "id_variante": null,
-            "cantidad": 1,
-            "titulo": "SSD NVMe Western Digital Blue SN570 1TB",
-            "variante_titulo": "",
-            "precio_unitario": 1999.0,
-            "moneda": "HNL",
-            "miniatura": "https://static.example/img/prod_wd_sn570_1.webp"
-          },
-          {
-            "id_producto": "prod_logitech_mx3s",
-            "id_variante": "v_grafito",
-            "cantidad": 1,
-            "titulo": "Mouse Logitech MX Master 3S Inalámbrico",
-            "variante_titulo": "Grafito",
-            "precio_unitario": 2999.0,
-            "moneda": "HNL",
-            "miniatura": "https://static.example/img/prod_logitech_mx3s_1.webp"
-          }
-        ]
-      }
-    },
-    {
-      "ruta": "ordenes/ord_demo_1001",
-      "datos": {
-        "id_orden": "ord_demo_1001",
-        "uid": "uid_demo_001",
-        "correo": "cliente_demo@correo.example",
-        "estado": "pendiente_pago",
-        "creado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2026-01-05T10:00:00Z"
+          "valor": "2026-01-04T10:00:00Z"
         },
         "actualizado_en": {
           "__tipo__": "timestamp",
           "valor": "2026-01-05T10:00:00Z"
-        },
-        "moneda": "HNL",
-        "precios": {
-          "subtotal": 9999.0,
-          "descuento": 1000.0,
-          "envio": 150.0,
-          "impuesto": 0.0,
-          "total": 9149.0
-        },
-        "cupon": {
-          "codigo": "WELCOME10",
-          "tipo": "porcentaje",
-          "valor": 10
-        },
-        "direccion_envio": {
-          "nombre_completo": "Juan Perez",
-          "telefono": "+50499990000",
-          "departamento": "Francisco Morazan",
-          "ciudad": "Tegucigalpa",
-          "colonia": "Colonia Centro",
-          "linea1": "Calle Principal, Casa 123",
-          "referencias": "Frente a la pulperia"
-        },
-        "metodo_envio": {
-          "id": "estandar",
-          "nombre": "Envio estandar",
-          "precio": 150.0,
-          "eta_dias": 3
-        },
-        "items": [
-          {
-            "id_producto": "prod_galaxy_a54",
-            "id_variante": "v_negro_128",
-            "sku": "SAMA54-128-BLK",
-            "titulo": "Samsung Galaxy A54 5G 128GB",
-            "variante_titulo": "Negro / 128GB",
-            "miniatura": "https://static.example/img/prod_galaxy_a54_1.webp",
-            "cantidad": 1,
-            "precio_unitario": 9999.0,
-            "total_linea": 9999.0,
-            "garantia_meses": 12,
-            "imei": []
-          }
-        ],
-        "pago": {
-          "proveedor": "contra_entrega",
-          "id_pago": null,
-          "estado": "pendiente"
-        },
-        "envio": {
-          "transportista": null,
-          "guia": null,
-          "enviado_en": null,
-          "entregado_en": null
         }
       }
     },
     {
-      "ruta": "paginas_catalogo/inicio_destacados_v1",
+      "ruta": "productos_admin/sony_xm5",
       "datos": {
-        "id_pagina": "inicio_destacados_v1",
-        "tipo": "inicio",
-        "pagina": 1,
-        "tamano_pagina": 4,
+        "id_producto": "sony_xm5",
+        "costo": 6500.0,
+        "proveedor": {
+          "id_proveedor": "prov_003",
+          "nombre": "Sony Distribuidor"
+        },
+        "ubicacion_bodega": "C-01",
+        "notas_internas": "",
         "actualizado_en": {
           "__tipo__": "timestamp",
-          "valor": "2026-01-05T12:00:00Z"
-        },
-        "tarjetas": [
-          {
-            "id_producto": "prod_galaxy_a54",
-            "titulo": "Samsung Galaxy A54 5G 128GB",
-            "precio": 9999.0,
-            "moneda": "HNL",
-            "imagen": "https://static.example/img/prod_galaxy_a54_1.webp",
-            "marca": "Samsung",
-            "categoria_principal": "celulares",
-            "etiquetas": [
-              "oferta"
-            ],
-            "calificacion_promedio": 4.9,
-            "calificacion_cantidad": 153,
-            "slug": "samsung-galaxy-a54-5g-128gb"
-          },
-          {
-            "id_producto": "prod_lenovo_slim3",
-            "titulo": "Laptop Lenovo IdeaPad Slim 3 15.6\" Ryzen 5 16GB 512GB SSD",
-            "precio": 18999.0,
-            "moneda": "HNL",
-            "imagen": "https://static.example/img/prod_lenovo_slim3_1.webp",
-            "marca": "Lenovo",
-            "categoria_principal": "laptops",
-            "etiquetas": [
-              "oferta"
-            ],
-            "calificacion_promedio": 4.5,
-            "calificacion_cantidad": 125,
-            "slug": "laptop-lenovo-ideapad-slim-3-ryzen5-16gb-512ssd"
-          },
-          {
-            "id_producto": "prod_sony_xm5",
-            "titulo": "Audífonos Sony WH-1000XM5 Cancelación de Ruido",
-            "precio": 9499.0,
-            "moneda": "HNL",
-            "imagen": "https://static.example/img/prod_sony_xm5_1.webp",
-            "marca": "Sony",
-            "categoria_principal": "audio",
-            "etiquetas": [
-              "oferta"
-            ],
-            "calificacion_promedio": 4.6,
-            "calificacion_cantidad": 84,
-            "slug": "audifonos-sony-wh-1000xm5"
-          },
-          {
-            "id_producto": "prod_tplink_ax55",
-            "titulo": "Router TP-Link Archer AX55 Wi‑Fi 6",
-            "precio": 2399.0,
-            "moneda": "HNL",
-            "imagen": "https://static.example/img/prod_tplink_ax55_1.webp",
-            "marca": "TP-Link",
-            "categoria_principal": "redes",
-            "etiquetas": [
-              "oferta"
-            ],
-            "calificacion_promedio": 4.4,
-            "calificacion_cantidad": 61,
-            "slug": "router-tp-link-archer-ax55-wifi-6"
-          }
-        ]
-      }
-    },
-    {
-      "ruta": "paginas_catalogo/cat_celulares_p1",
-      "datos": {
-        "id_pagina": "cat_celulares_p1",
-        "tipo": "categoria",
-        "id_categoria": "celulares",
-        "pagina": 1,
-        "tamano_pagina": 1,
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2026-01-05T12:00:00Z"
-        },
-        "tarjetas": [
-          {
-            "id_producto": "prod_galaxy_a54",
-            "titulo": "Samsung Galaxy A54 5G 128GB",
-            "precio": 9999.0,
-            "moneda": "HNL",
-            "imagen": "https://static.example/img/prod_galaxy_a54_1.webp",
-            "marca": "Samsung",
-            "categoria_principal": "celulares",
-            "etiquetas": [
-              "oferta"
-            ],
-            "calificacion_promedio": 4.9,
-            "calificacion_cantidad": 153,
-            "slug": "samsung-galaxy-a54-5g-128gb"
-          }
-        ]
-      }
-    },
-    {
-      "ruta": "paginas_catalogo/cat_laptops_p1",
-      "datos": {
-        "id_pagina": "cat_laptops_p1",
-        "tipo": "categoria",
-        "id_categoria": "laptops",
-        "pagina": 1,
-        "tamano_pagina": 1,
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2026-01-05T12:00:00Z"
-        },
-        "tarjetas": [
-          {
-            "id_producto": "prod_lenovo_slim3",
-            "titulo": "Laptop Lenovo IdeaPad Slim 3 15.6\" Ryzen 5 16GB 512GB SSD",
-            "precio": 18999.0,
-            "moneda": "HNL",
-            "imagen": "https://static.example/img/prod_lenovo_slim3_1.webp",
-            "marca": "Lenovo",
-            "categoria_principal": "laptops",
-            "etiquetas": [
-              "oferta"
-            ],
-            "calificacion_promedio": 4.5,
-            "calificacion_cantidad": 125,
-            "slug": "laptop-lenovo-ideapad-slim-3-ryzen5-16gb-512ssd"
-          }
-        ]
-      }
-    },
-    {
-      "ruta": "paginas_catalogo/cat_audio_p1",
-      "datos": {
-        "id_pagina": "cat_audio_p1",
-        "tipo": "categoria",
-        "id_categoria": "audio",
-        "pagina": 1,
-        "tamano_pagina": 1,
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2026-01-05T12:00:00Z"
-        },
-        "tarjetas": [
-          {
-            "id_producto": "prod_sony_xm5",
-            "titulo": "Audífonos Sony WH-1000XM5 Cancelación de Ruido",
-            "precio": 9499.0,
-            "moneda": "HNL",
-            "imagen": "https://static.example/img/prod_sony_xm5_1.webp",
-            "marca": "Sony",
-            "categoria_principal": "audio",
-            "etiquetas": [
-              "oferta"
-            ],
-            "calificacion_promedio": 4.6,
-            "calificacion_cantidad": 84,
-            "slug": "audifonos-sony-wh-1000xm5"
-          }
-        ]
-      }
-    },
-    {
-      "ruta": "paginas_catalogo/cat_almacenamiento_p1",
-      "datos": {
-        "id_pagina": "cat_almacenamiento_p1",
-        "tipo": "categoria",
-        "id_categoria": "almacenamiento",
-        "pagina": 1,
-        "tamano_pagina": 1,
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2026-01-05T12:00:00Z"
-        },
-        "tarjetas": [
-          {
-            "id_producto": "prod_wd_sn570_1tb",
-            "titulo": "SSD NVMe Western Digital Blue SN570 1TB",
-            "precio": 1999.0,
-            "moneda": "HNL",
-            "imagen": "https://static.example/img/prod_wd_sn570_1.webp",
-            "marca": "Western Digital",
-            "categoria_principal": "almacenamiento",
-            "etiquetas": [
-              "oferta"
-            ],
-            "calificacion_promedio": 4.5,
-            "calificacion_cantidad": 65,
-            "slug": "ssd-nvme-wd-blue-sn570-1tb"
-          }
-        ]
-      }
-    },
-    {
-      "ruta": "paginas_catalogo/cat_redes_p1",
-      "datos": {
-        "id_pagina": "cat_redes_p1",
-        "tipo": "categoria",
-        "id_categoria": "redes",
-        "pagina": 1,
-        "tamano_pagina": 1,
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2026-01-05T12:00:00Z"
-        },
-        "tarjetas": [
-          {
-            "id_producto": "prod_tplink_ax55",
-            "titulo": "Router TP-Link Archer AX55 Wi‑Fi 6",
-            "precio": 2399.0,
-            "moneda": "HNL",
-            "imagen": "https://static.example/img/prod_tplink_ax55_1.webp",
-            "marca": "TP-Link",
-            "categoria_principal": "redes",
-            "etiquetas": [
-              "oferta"
-            ],
-            "calificacion_promedio": 4.4,
-            "calificacion_cantidad": 61,
-            "slug": "router-tp-link-archer-ax55-wifi-6"
-          }
-        ]
-      }
-    },
-    {
-      "ruta": "paginas_catalogo/cat_accesorios_p1",
-      "datos": {
-        "id_pagina": "cat_accesorios_p1",
-        "tipo": "categoria",
-        "id_categoria": "accesorios",
-        "pagina": 1,
-        "tamano_pagina": 3,
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2026-01-05T12:00:00Z"
-        },
-        "tarjetas": [
-          {
-            "id_producto": "prod_logitech_mx3s",
-            "titulo": "Mouse Logitech MX Master 3S Inalámbrico",
-            "precio": 2999.0,
-            "moneda": "HNL",
-            "imagen": "https://static.example/img/prod_logitech_mx3s_1.webp",
-            "marca": "Logitech",
-            "categoria_principal": "accesorios",
-            "etiquetas": [
-              "oferta"
-            ],
-            "calificacion_promedio": 4.4,
-            "calificacion_cantidad": 168,
-            "slug": "mouse-logitech-mx-master-3s"
-          },
-          {
-            "id_producto": "prod_wd_sn570_1tb",
-            "titulo": "SSD NVMe Western Digital Blue SN570 1TB",
-            "precio": 1999.0,
-            "moneda": "HNL",
-            "imagen": "https://static.example/img/prod_wd_sn570_1.webp",
-            "marca": "Western Digital",
-            "categoria_principal": "almacenamiento",
-            "etiquetas": [
-              "oferta"
-            ],
-            "calificacion_promedio": 4.5,
-            "calificacion_cantidad": 65,
-            "slug": "ssd-nvme-wd-blue-sn570-1tb"
-          },
-          {
-            "id_producto": "prod_sony_xm5",
-            "titulo": "Audífonos Sony WH-1000XM5 Cancelación de Ruido",
-            "precio": 9499.0,
-            "moneda": "HNL",
-            "imagen": "https://static.example/img/prod_sony_xm5_1.webp",
-            "marca": "Sony",
-            "categoria_principal": "audio",
-            "etiquetas": [
-              "oferta"
-            ],
-            "calificacion_promedio": 4.6,
-            "calificacion_cantidad": 84,
-            "slug": "audifonos-sony-wh-1000xm5"
-          }
-        ]
-      }
-    },
-    {
-      "ruta": "paginas_catalogo/ofertas_semana_p1",
-      "datos": {
-        "id_pagina": "ofertas_semana_p1",
-        "tipo": "coleccion",
-        "nombre": "Ofertas de la semana",
-        "pagina": 1,
-        "tamano_pagina": 4,
-        "actualizado_en": {
-          "__tipo__": "timestamp",
-          "valor": "2026-01-05T12:00:00Z"
-        },
-        "tarjetas": [
-          {
-            "id_producto": "prod_galaxy_a54",
-            "titulo": "Samsung Galaxy A54 5G 128GB",
-            "precio": 9999.0,
-            "moneda": "HNL",
-            "imagen": "https://static.example/img/prod_galaxy_a54_1.webp",
-            "marca": "Samsung",
-            "categoria_principal": "celulares",
-            "etiquetas": [
-              "oferta"
-            ],
-            "calificacion_promedio": 4.9,
-            "calificacion_cantidad": 153,
-            "slug": "samsung-galaxy-a54-5g-128gb"
-          },
-          {
-            "id_producto": "prod_wd_sn570_1tb",
-            "titulo": "SSD NVMe Western Digital Blue SN570 1TB",
-            "precio": 1999.0,
-            "moneda": "HNL",
-            "imagen": "https://static.example/img/prod_wd_sn570_1.webp",
-            "marca": "Western Digital",
-            "categoria_principal": "almacenamiento",
-            "etiquetas": [
-              "oferta"
-            ],
-            "calificacion_promedio": 4.5,
-            "calificacion_cantidad": 65,
-            "slug": "ssd-nvme-wd-blue-sn570-1tb"
-          },
-          {
-            "id_producto": "prod_tplink_ax55",
-            "titulo": "Router TP-Link Archer AX55 Wi‑Fi 6",
-            "precio": 2399.0,
-            "moneda": "HNL",
-            "imagen": "https://static.example/img/prod_tplink_ax55_1.webp",
-            "marca": "TP-Link",
-            "categoria_principal": "redes",
-            "etiquetas": [
-              "oferta"
-            ],
-            "calificacion_promedio": 4.4,
-            "calificacion_cantidad": 61,
-            "slug": "router-tp-link-archer-ax55-wifi-6"
-          },
-          {
-            "id_producto": "prod_logitech_mx3s",
-            "titulo": "Mouse Logitech MX Master 3S Inalámbrico",
-            "precio": 2999.0,
-            "moneda": "HNL",
-            "imagen": "https://static.example/img/prod_logitech_mx3s_1.webp",
-            "marca": "Logitech",
-            "categoria_principal": "accesorios",
-            "etiquetas": [
-              "oferta"
-            ],
-            "calificacion_promedio": 4.4,
-            "calificacion_cantidad": 168,
-            "slug": "mouse-logitech-mx-master-3s"
-          }
-        ]
+          "valor": "2026-01-05T10:00:00Z"
+        }
       }
     }
   ]
